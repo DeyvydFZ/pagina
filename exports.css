@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d; /* Fundo mais escuro */
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos do Cabeçalho */
+.header-container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.header-container .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-container .menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos da Barra Lateral */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    border-right: 1px solid #333;
+}
+
+.sidebar-header {
+    padding: 10px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
+}
+
+.sidebar-active {
+    left: 0;
+}
+
+.rounded-img {
+  border-radius: 25%;
+}
+
+
+/* Estilos do Conteúdo Principal */
+main {
+    flex: 1;
+    background-color: #0d0d0d;
+    padding: 20px;
+}
+
+main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos dos Quadrados */
+.box {
+    background-color: #2e2e2e; /* Quadrados mais claros */
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos do Rodapé */
+.footer-container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+}
