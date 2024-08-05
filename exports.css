@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0d0d0d; /* Fundo mais escuro */
+    background-color: #0d0d0d;
     color: #ffffff;
     height: 100vh;
     display: flex;
@@ -80,9 +80,8 @@ body {
 }
 
 .rounded-img {
-  border-radius: 25%;
+    border-radius: 25%;
 }
-
 
 /* Estilos do Conteúdo Principal */
 main {
@@ -107,11 +106,21 @@ main p {
 
 /* Estilos dos Quadrados */
 .box {
-    background-color: #2e2e2e; /* Quadrados mais claros */
+    background-color: #2e2e2e;
     color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
+}
+
+.box-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box-container .box {
+    flex: 1;
+    text-align: center;
 }
 
 /* Estilos do Rodapé */
@@ -121,4 +130,11 @@ main p {
     text-align: center;
     padding: 10px 0;
     border-top: 1px solid #333;
+}
+
+/* Notificação */
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
